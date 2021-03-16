@@ -65,7 +65,14 @@ class UI {
 //Local storage Class
 class Store {
   static displayBooks() {
+    const books = Store.getBooks();
 
+    books.forEach(function(book) {
+      const ui = new UI;
+      
+      //Add book to UI
+      ui.addBookToList(book);
+    });
   }
 
   static addBook(book) {
@@ -88,6 +95,9 @@ class Store {
 
   }
 }
+
+//DOM Load Event
+document.addEventListener('DOMContentLoaded', Store.displayBooks);
 
 //Event Listener for add book
 document.getElementById('book-form').addEventListener('submit',
