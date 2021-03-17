@@ -7,4 +7,4 @@ UX layout with Skeleton<br>
 #3. Validation && Alert<br>
 #4. Delete book from list<br>
 #5. Convert to ES6<br>
-#6. Added Local Storage.
+#6. Persistance to Local Storage.
